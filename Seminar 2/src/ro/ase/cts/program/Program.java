@@ -9,14 +9,14 @@ import java.util.List;
 
 public class Program {
 
-	public static List<Aplicant> citesteAplicanti(String numeFisier, AplicantiReader reader) throws FileNotFoundException {
-		return reader.readAplicanti(numeFisier);
+	public static List<Aplicant> citesteAplicanti(AplicantiReader reader) throws FileNotFoundException {
+		return reader.readAplicanti();
 	}
 
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = citesteAplicanti("Seminar 2/studenti.txt", new StudentiReader());
+			listaAplicanti = citesteAplicanti( new StudentiReader("Seminar 2/studenti.txt"));
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {

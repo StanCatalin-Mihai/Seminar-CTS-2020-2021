@@ -6,7 +6,7 @@ public abstract class Aplicant{
 	protected int varsta;
 	protected int punctaj;
 	protected int nr_proiecte;
-	protected String[] denumireProiect;
+	protected String[] denumiriProiecte;
 	
 	
 	public String getNume() {
@@ -54,13 +54,14 @@ public abstract class Aplicant{
 		this.varsta = varsta;
 		this.punctaj = punctaj;
 		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
+		this.denumiriProiecte = denumireProiect;
 	}
 	public int getNr_proiecte() {
 		return nr_proiecte;
 	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
-	}
 
+	public void setDenumiriProiecte(int nr_proiecte, String[] vectProiecte) {
+		this.nr_proiecte = nr_proiecte;
+		this.denumiriProiecte = vectProiecte;
+	}
 }
