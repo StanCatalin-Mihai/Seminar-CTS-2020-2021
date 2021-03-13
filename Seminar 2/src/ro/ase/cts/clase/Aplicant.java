@@ -27,11 +27,11 @@ public abstract class Aplicant{
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
-	public void statut(){
-		if(punctaj>80)
-			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
-		else
-			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
+	public void afisareStatutInProiect(Proiect proiect){
+		StringBuilder builder = new StringBuilder();
+		builder.append("Aplicantul ").append(nume).append(" ").append(prenume).append(" ");
+		builder.append(punctaj > proiect.getPragAcceptare() ? " a fost acceptat." : " nu a fost acceptat.");
+		System.out.println(builder.toString());
 		}
 	public int getPunctaj() {
 		return punctaj;
@@ -64,4 +64,6 @@ public abstract class Aplicant{
 		this.nr_proiecte = nr_proiecte;
 		this.denumiriProiecte = vectProiecte;
 	}
+
+	public abstract float getFinantare();
 }
