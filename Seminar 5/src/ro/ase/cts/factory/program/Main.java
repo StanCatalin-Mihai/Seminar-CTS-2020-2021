@@ -13,5 +13,9 @@ public class Main {
         System.out.println(medic.toString());
         System.out.println(asistent.toString());
         System.out.println(brancardier.toString());
+
+        PersonalMedical medic2 = SpitalSingleton.getInstance().create(TipPersonal.Medic, "Petrica", 12345);
+
+        System.out.println(medic2);
     }
 }
