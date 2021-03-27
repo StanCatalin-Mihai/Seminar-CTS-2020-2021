@@ -1,7 +1,7 @@
 package ro.ase.cts.program;
 
-import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.clase.Proiect;
+import ro.ase.cts.clase.Aplicant;
 import ro.ase.cts.readers.AplicantiReader;
 import ro.ase.cts.readers.StudentiReader;
 

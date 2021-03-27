@@ -1,7 +1,5 @@
 package ro.ase.cts.clase;
 
-import java.util.Arrays;
-
 public class Elev extends Aplicant{
 	private int clasa;
 	private String tutore;

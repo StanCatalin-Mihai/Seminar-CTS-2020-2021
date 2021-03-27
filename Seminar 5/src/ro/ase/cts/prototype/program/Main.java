@@ -1,6 +1,6 @@
-package ro.ase.cts.program;
+package ro.ase.cts.prototype.program;
 
-import ro.ase.cts.clase.Reteta;
+import ro.ase.cts.prototype.clase.Reteta;
 
 import java.util.ArrayList;
 import java.util.List;
