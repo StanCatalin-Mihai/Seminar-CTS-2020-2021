@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class StudentTestSetNume {
 
     @Test
-    public void setNume() {
+    public void testSetNume() {
         String nume = "Popescu";
         Student student = new Student();
         student.setNume(nume);

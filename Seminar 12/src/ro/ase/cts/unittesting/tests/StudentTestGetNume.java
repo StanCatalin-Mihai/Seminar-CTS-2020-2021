@@ -7,6 +7,6 @@ import static org.junit.Assert.*;
 public class StudentTestGetNume {
 
     @Test
-    public void getNume() {
+    public void testGetNume() {
     }
 }
