@@ -4,6 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import ro.ase.cts.unittesting.categories.TesteUrgente;
 import ro.ase.cts.unittesting.clase.Grupa;
 import ro.ase.cts.unittesting.mocks.StudentDummy;
 
@@ -13,6 +15,7 @@ public class GrupaTestWithMocks {
     static Grupa grupa;
 
     @Test
+    @Category(TesteUrgente.class)
     public void testAddStudentReference()
     {
         Grupa grupa = new Grupa(1086);

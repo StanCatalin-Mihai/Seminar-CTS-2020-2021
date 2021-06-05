@@ -1,6 +1,9 @@
 package ro.ase.cts.unittesting.tests;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
+import ro.ase.cts.unittesting.categories.TesteRight;
+import ro.ase.cts.unittesting.categories.TesteUrgente;
 import ro.ase.cts.unittesting.clase.Grupa;
 
 import static org.junit.Assert.*;
@@ -8,6 +11,7 @@ import static org.junit.Assert.*;
 public class GrupaTest {
 
     @Test
+    @Category(TesteRight.class)
     public void testConstructorRight()
     {
         Grupa grupa = new Grupa(1086);
@@ -22,6 +26,7 @@ public class GrupaTest {
     }
 
     @Test
+    @Category(TesteUrgente.class)
     public void testConstructorBoundarySuperior()
     {
         Grupa grupa = new Grupa(1100);
@@ -49,6 +54,7 @@ public class GrupaTest {
     }
 
     @Test
+    @Category(TesteUrgente.class)
     public void testConstructorRange()
     {
         Grupa grupa = new Grupa(1001);
